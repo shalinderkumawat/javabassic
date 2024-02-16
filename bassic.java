@@ -150,4 +150,20 @@ Q11 a*b
     }
 }
 
+Q12  You can also use the + character to add a variable to another variable:
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        String fristname = "Shalinder";
+        String lastname = "kumawat";
+        String fullname = fristname + lastname;
+        System.out.println(fullname);
+    }
+}
+
+creat the all data type in java language
+
+
 
