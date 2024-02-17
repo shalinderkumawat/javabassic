@@ -166,4 +166,70 @@ public class Main
 creat the all data type in java language
 
 
+        System.out.print(multiply);
+    }
+}
+
+Q10 add,multiply,divison,modlur,subtraction all in one code in java language
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+        int number = 10, number2 = 10;
+
+        int add = number + number2;
+          System.out.println (add);
+        int multiply = number * number2;
+          System.out.println (multiply);
+        int divison = number / number2;
+          System.out.println (divison);
+        int subtraction = number - number2;
+          System.out.println (subtraction);
+        int modlur = number % number2;
+          System.out.println (modlur);
+  }
+}
+
+Q11 a*b
+    ___ int value in java language
+    a-b
+
+
+    public class Main
+{
+    public static void main(String[] args)
+    {
+        int number1=3,number2=2;
+        System.out.print((number1*number2)/(number1-number2));
+    }
+}
+
+Q12  You can also use the + character to add a variable to another variable:
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        String fristname = "Shalinder";
+        String lastname = "kumawat";
+        String fullname = fristname + lastname;
+        System.out.println(fullname);
+    }
+}
+
+creat the all data type in java language
+
+
+
+bassic.java [unix] (16:14 15/02/2024)                                  169,1 Bot
+-- INSERT --
+i----------------------------------------------------
+34 +89 
+
+2*2 
+
+67-4
+
+24/2 
 
