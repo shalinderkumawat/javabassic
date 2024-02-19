@@ -294,3 +294,382 @@ public class Main{
         }
     }
 }
+
+Q13 
+
+reverse number :
+input :64784
+output :48746
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        System.out.println("revers number");
+        int num=64784;
+        int rem=0;
+        int sum=0;
+        while(num>0){
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+
+        }
+        System.out.println(sum);
+    }
+}
+
+
+Q14.
+
+pallindrome :
+
+156787651 pallindrome :yes |no
+
+
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner inputdo= new Scanner (System.in);
+        int num=inputdo.nextInt();
+        int rem=0;
+        int sum=0;
+        int temp=num;
+        while(num>0)
+        {
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+
+
+        }
+        if(sum==temp)
+        {
+            System.out.println("this number is pallindrom number");
+        }
+        else{
+            System.out.println("this number is not pallinfrom number ");
+        }
+    }
+}
+
+Q15. armstrong number :
+                       153
+
+
+		       
+import java.util.*;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner inputdo = new Scanner (System.in);
+        int num=inputdo.nextInt();
+        int rem;
+        int sum=0;
+        int temp=num;
+        while(num>0)
+        {
+            rem=num%10;
+            sum=sum+rem*rem*rem;
+            num=num/10;
+        }
+        if(sum==temp)
+        {
+            System.out.println("this is armstrong number :");
+        }
+        else
+        {
+            System.out.println("this is not armstrong number :");
+        }
+    }
+}
+
+
+Q16. sum of digit :code 
+
+  import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner inputdo= new Scanner (System.in);
+        System.out.println("enter the sum of value :");
+        int num=inputdo.nextInt();
+        int rem;
+        int sum=0;
+        while(num>0){
+            rem=num%10;
+            sum=sum+rem;
+            num=num/10;
+            
+        }
+        System.out.println(sum);
+    }
+}
+
+Q17.  count digit :
+                   6746357
+
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner inputdo=new Scanner (System.in);
+        System.out.println("enter the N  number :");
+        int num=inputdo.nextInt();
+        int count=0;
+        while(num>0)
+        {
+            count++;
+            num=num/10;
+        }
+        System.out.println("the all digites is :" +count);
+    }
+}
+
+Q18. a :armstrong number 
+
+p :pallindrome 
+
+
+r :reverse number
+
+c :count digit 
+
+s :sum of digit 
+
+o :sum of loop numbers 
+
+w :(while loop)
+	e :1-->100 (even number 1 to 100)
+	d :100--->1 (odd numbers print)
+
+f :(for loop)
+	e :1-->100 (even number 1 to 100)
+	d :100--->1 (odd numbers print)
+
+l :factorial 
+
+u :sum of loop number (for loop )
+
+
+       import java.util.*;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner inputdo=new Scanner (System.in);
+        System.out.println("enter the character  a to :");
+        char value=inputdo.next().charAt(0);
+        if(value=='a')
+        {
+            System.out.println("this character is show to armstrong number :");
+            int num=inputdo.nextInt();
+            int rem;
+            int sum=0;
+            while(num>0)
+            {
+                rem=num%10;
+                sum=sum+(rem*rem*rem);
+                num=num/10;
+            }
+            System.out.println("the armstrong number is :" + sum);
+
+        }
+        if(value=='p')
+        {
+
+            System.out.println("this character is show pallindron number :");
+            int num=inputdo.nextInt();
+            int rem;
+            int sum=0;
+            int temp=num;
+            while(num>0)
+            {
+                rem=num%10;
+                sum=sum*10+rem;
+                num=num/10;
+
+            }
+            if(sum==temp)
+            {
+                System.out.println("this numbe is pallindrom number ");
+            }
+            else
+            {
+                System.out.println("this number is not pallindrom number");
+            }
+        }
+        else if(value=='r')
+        {
+            System.out.println("this number is show revers number");
+            int num=inputdo.nextInt();
+            int rem;
+            int sum=0;
+            while(num>0)
+            {
+                rem=num%10;
+                sum=sum*10+rem;
+                num=num/10;
+
+            }
+            System.out.println(sum);
+        }
+        else if (value=='c')
+        {
+            System.out.println("this character is show totel number");
+            int num=inputdo.nextInt();
+            int count=0;
+            while(num>0)
+            {
+
+                num=num/10;
+                count++;
+            }
+            System.out.println(count);
+        }
+        else if(value=='o')
+        {
+            System.out.println("this character is show the sum of number");
+            int num=inputdo.nextInt();
+            int rem;
+            int sum=0;
+            while(num>0){
+                rem=num%10;
+
+                sum=sum+rem;
+                num=num/10;
+
+            }
+            System.out.println(sum);
+        }
+        else if(value=='l')
+        {
+            System.out.println("this character is show totel number sum :");
+            int num=inputdo.nextInt();
+            int last=inputdo.nextInt();
+            int sum=0;
+            while (num<=last)
+            {
+                sum=sum+num;
+
+                num++;
+                System.out.println("the number is :" +num);
+            }
+            System.out.println("the sum of totel number :"+sum);
+        }
+        else if(value=='w')
+        {
+            System.out.println("this character is show while loop counting odd and even number");
+            char character=inputdo.next().charAt(0);
+            if(character=='e')
+            {
+                System.out.println("this character is show even number");
+                int num=inputdo.nextInt();
+                int last=inputdo.nextInt();
+                while(num<=last)
+                {
+                    num++;
+                    while(num%2==0)
+                    {
+                        System.out.println("the even number :"+num++);
+                    }
+                }
+            }
+            else if(character=='d')
+            {
+                System.out.println("thie character is show odd number :");
+                int number=inputdo.nextInt();
+                int last=inputdo.nextInt();
+                while(number>=last)
+                {
+                    number--;
+                    while(number%2!=0)
+                    {
+                        System.out.println(number--);
+                    }
+                }
+            }
+
+        }
+        else if(value=='t')
+        {
+            System.out.println("this character is print table whith for  and while loop ");
+            char vlue=inputdo.next().charAt(0);
+            System.out.println("enter the chatacter ;like : f : w");
+            if(vlue=='w')
+            {
+                System.out.println("this characte is print the table with while loop");
+                int num=inputdo.nextInt();
+                int a=1;
+                while(a<=10)
+                {
+                    System.out.println(num + " * " + a + " = " + (num*a));
+                    a++;
+                }
+            }
+            else if(vlue=='f')
+            {
+                System.out.println("this character is show table with for loop");
+                int num=inputdo.nextInt();
+                System.out.println("enter the table number :");
+                for(int i=1;i<=10;i++)
+                {
+                    System.out.println(num + " * " + i + " = " + (num*i));
+                }
+            }
+        }
+        else if(value=='y')
+        {
+            System.out.println("this character is show calcluter :");
+            System.out.println("enter the character like : a d s m o :");
+            char hi=inputdo.next().charAt(0);
+
+            if(hi=='a')
+            {
+                int num=inputdo.nextInt();
+                int num1=inputdo.nextInt();
+                System.out.println( num + " + " + num1 + " = " + (num+num1));
+            }
+            else if(hi=='s')
+            {
+                System.out.println("this cahracter is show subtraction : ");
+                System.out.println("enter the number :");
+                int a=inputdo.nextInt();
+                int b=inputdo.nextInt();
+                System.out.println(a + " - " + b + " = " + (a-b));
+            }
+            else if(hi=='d')
+            {
+                System.out.println("this cahracter if show divide :");
+                System.out.println("enter the number of divide :");
+                int a=inputdo.nextInt();
+                int b=inputdo.nextInt();
+                System.out.println(a + " / " + b + " = " + (a/b));
+            }
+            else if (hi=='m')
+            {
+                System.out.println("this character is show multiply");
+                System.out.println("enter the number : ");
+                int a=inputdo.nextInt();
+                int b=inputdo.nextInt();
+                System.out.println(a + " * " + b + " = " + (a*b));
+
+            }
+            else if(hi=='o')
+            {
+                System.out.println("this character is show modlur ");
+                System.out.println("enter the number :");
+                int a=inputdo.nextInt();
+                int b=inputdo.nextInt();
+                System.out.println(a + " % " + b + " = " + (a%b));
+            }
+        }
+    }
+}
+
+
