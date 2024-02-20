@@ -469,4 +469,130 @@ public class Main
 
 
 
+Q 19.
+      selery tex 
+
+
+      import java.util.*;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner i=new Scanner (System.in);
+        System.out.println("this");System.out.println("enter your seleary");
+        int num=i.nextInt();
+
+        double text;
+        if(num<=10000)
+        {
+            System.out.println("no need to text");
+        }
+        else if(num>=10000&&num<=100000)
+        {
+            text=(num * 0.10f);
+            System.out.println(num + "totel tex : " + text);
+        }
+        else{
+            text=num*0.20f;
+            System.out.println(num + " totel tex : " + text);
+        }
+    }
+}
+
+Q20.
+
+     leap year and not leapl year 
+
+
+     import java.util.*;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("enter the year :");
+        int y=input.nextInt();
+        if(y%100==0 && y%400==0 || y%100!=0 && y%4==0)
+        {
+            System.out.println("leap year");
+        }
+        else
+        {
+            System.out.println("not leap year");
+        }
+    }
+}
+
+
+
+
+Q21.
+
+     prime number and not prime number 
+
+
+     import java.util.*;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner inputdo=new Scanner (System.in);
+        int n=inputdo.nextInt();
+        int count=0;
+        for(int i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+            count++;
+            }
+
+        }
+
+        if(count==2)
+        {
+            System.out.println("prime nunmber");
+        }
+        else
+        {
+            System.out.println("not prime number ");
+        }
+    }
+}
+
+
+
+Q22.
+
+    perfect number
+
+
+    import java.util.*;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner inputdo=new Scanner (System.in);
+        System.out.println("enter the number");
+        int num=inputdo.nextInt();
+        int sum=0;
+
+        for(int i=1;i<num;i++)
+        {
+            System.out.print(i + "  ");
+           if(num%i==0)
+           {
+               sum=sum+i;
+           }
+
+        }
+        if(num==sum)
+        {
+            System.out.println(num+ " this number is perfect number " + sum);
+        }
+        else
+        {
+            System.out.println("this number not perfect number");
+        }
+    }
+}
+
+
+Q23.
+
 

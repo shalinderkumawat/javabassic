@@ -222,14 +222,14 @@ creat the all data type in java language
 
 
 
-bassic.java [unix] (16:14 15/02/2024)                                  169,1 Bot
--- INSERT --
-i----------------------------------------------------
-34 +89 
+A to z character is print
 
-2*2 
-
-67-4
-
-24/2 
-
+public class Main{
+    public static void main(String[] args)
+    {
+        for (char a='A';a<='z';a++)
+        {
+            System.out.print(a +  " ");
+        }
+    }
+}
