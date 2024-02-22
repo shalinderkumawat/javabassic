@@ -284,4 +284,33 @@ public class Main{
             System.out.print(a[i] + "  ");
         }
     }
+
 }
+
+
+
+
+     2.   for eich loop (for (data type varible-name : array name));
+
+
+    import java.util.*;
+
+public  class Main{
+    public static void main(String[] args)
+    {
+        Scanner inputdo=new Scanner (System.in);
+        
+        int a[] =new int[3];
+        for (int i=0;i<34;i++)
+        {
+            a[i]=inputdo.nextInt();
+        }
+        
+        for (int n: a)
+        {
+            System.out.print(n + "  ");
+        }
+    }
+}
+
+

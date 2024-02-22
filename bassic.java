@@ -232,4 +232,14 @@ public class Main{
             System.out.print(a +  " ");
         }
     }
+
+
+
 }
+
+
+
+Q.  creat the all data type and varible and loop and swap value and data type typecasting and etc.
+
+
+
