@@ -80,4 +80,35 @@ public class Main{
 }
 
 
+Q .  create the program in java language in neasted switch case 
+     EX. your are collage student and you entered the sem1 so sem1 all subject list to print in your output
+       
+     import java.util.*;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner inputdo=new Scanner (System.in);
+        System.out.println("you are student of maharishi arvind university");
+        System.out.println("Enter your semester number : ");
+        int sem= inputdo.nextInt();
+        switch(sem)
+        {
+            case 1: String sub[] =new String[5];
+
+            sub[0]="communitation english";
+            sub[1]="communitation english";
+            sub[2]="communitation english";
+            sub[3]="communitation english";
+            sub[4]="communitation english";
+            for(int a=0;a<5;a++)
+            {
+                System.out.println(sub[a]);
+            }
+            break;
+            default : System.out.println("this number is not valide");
+        }
+    }
+}
+
+
 
