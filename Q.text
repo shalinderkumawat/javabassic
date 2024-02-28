@@ -1,0 +1,47 @@
+Q1. what is java language?
+Ans.  java is a platform indipand language, 
+      and java is a programing language
+      and java is a provid hight lavael language
+      like robust ,object oriented or secure language
+
+Q2.  what is PLATFORM?
+Ans.  set of of hardwre and softwre on wich program will run,
+
+Q3.  what is platform indipand ?
+Ans.  dosen't need aney platform for run your code 
+      like=> 
+             you creat your program linux operating system 
+                    your program run aney platform 
+                    like OS , windows,linux etc
+                    becouse byte code
+Q4. What is hight level language ?
+Ans. level of language=>
+                         1.low level language=> socurse code and it's covert the asemmbly language
+			 2.mid level language=> low level+hight level language
+ 			 3.hight level language=> esey to use , huname undestand language
+
+Q5. What is robust mining?
+Ans. robust mining in english like moste secoure language
+     it is use strong memory management .
+     in this java not use a pointer.
+     and it use garbage collaction =.it's run JVM(java virtul machine)to get the object wich are not use to java applcation
+     
+Q6. What is OOPS (object orinted language)?
+Ans.  object is a callication of class and object; 
+   
+Q7. what is JVM?
+Ans. jvm is (java virtule machine)
+     jvm read only byte  code
+     and jvm is only .class file read only
+     inside jvm=>
+                 jit compiler 
+                 JIT=j=just;
+		     i=in;
+                     t=time;
+Q8. What is byte code?
+Ans. byte code is puthub;
+     and it's hight level and create is ||  downlode
+     and it hight level language;
+     and java is use to ;latform 
+
+Q8.     	
