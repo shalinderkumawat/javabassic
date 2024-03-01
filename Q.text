@@ -1,11 +1,11 @@
 Q1. what is java language?
 Ans.  java is a platform indipand language, 
       and java is a programing language
-      and java is a provid hight lavael language
+      and java is a provid hight lavel language
       like robust ,object oriented or secure language
 
 Q2.  what is PLATFORM?
-Ans.  set of of hardwre and softwre on wich program will run,
+Ans.  set of hardwre and softwre on wich program will run,
 
 Q3.  what is platform indipand ?
 Ans.  dosen't need aney platform for run your code 
@@ -16,6 +16,7 @@ Ans.  dosen't need aney platform for run your code
                     becouse byte code
 Q4. What is hight level language ?
 Ans. level of language=>
+			Thare are three types pf language
                          1.low level language=> socurse code and it's covert the asemmbly language
 			 2.mid level language=> low level+hight level language
  			 3.hight level language=> esey to use , huname undestand language
@@ -27,12 +28,12 @@ Ans. robust mining in english like moste secoure language
      and it use garbage collaction =.it's run JVM(java virtul machine)to get the object wich are not use to java applcation
      
 Q6. What is OOPS (object orinted language)?
-Ans.  object is a callication of class and object; 
+Ans.  object is a collaction of class and object; 
    
 Q7. what is JVM?
 Ans. jvm is (java virtule machine)
      jvm read only byte  code
-     and jvm is only .class file read only
+     and jvm is only [.class] file read only
      inside jvm=>
                  jit compiler 
                  JIT=j=just;
@@ -42,6 +43,71 @@ Q8. What is byte code?
 Ans. byte code is puthub;
      and it's hight level and create is ||  downlode
      and it hight level language;
-     and java is use to ;latform 
+     and java is use to ;platform 
 
-Q8.     	
+Q8.  what is name of inside jvm compiler?
+Ans.  JIT=j= just
+	  i= in
+          t=time
+Q9.  What is jit ?
+Ans.  jit is compiler in jvm 
+      jit recompile the byte code 
+       
+       [source code]  === [jit compiler]=[.class] 
+
+        jit compiler is recompile this code like your code is .class type or not;
+Q10. How many comlpiler in java?
+Ans.  thare are two types comlpiler in java 
+       1. javac
+       2. jit
+Q11. What is javac compiler?
+Ans.  javac compiler is a compiler 
+      javaccompile ris persint of aney computer but is not visible
+      javac compiler is use to == 
+      1.javac and class name
+      2. and class name.
+Q12. What is differant between object code and byte code?
+Ans.  object                         |                       byte code
+     1	object code is not run any      1. byte code is run aney operating system 
+        operating system              	
+     2. obhject code is high level      2. byte code is high level code but is assembly                                            code.
+        code                          
+
+
+
+Q13. What full form is JDK?
+Ans.  JDK = java developemnt tool kit 
+
+Q14. What is full form JVM?
+Ans.  java virtiul machine.
+
+Q15. What id full form JRE?
+Ans.  java run time enviorment.
+
+Q16. What is jvm?
+Ans. java virtiul machine 
+     jvm is check the your code is .class type and not 
+     and inside the jvm jit .
+     jit like just in time 
+     jit is recompile the your code
+     and convert the .exe type like executable form
+Q17. What is java run time enviorment ?
+Ans.  java run time it's provide a enviorment 
+      inside the jre many libraries 
+      and jre is dosen't effect your computer 
+      like you you work in your pc and you open three tabe (1 notpade , 2 and javac compiler , 3 and you play media player )
+      and your compiler show some error this point your compiler is give the error is dosen't effect 
+      your outer tebs and outer tebs is not give the effect your iner tebs 
+      almoust iner not effect outer 
+              outer is not effect iner teb 
+      jre his provide;
+
+
+Q18. What is jdk?
+Ans.  jdk is java developemnt toolkit 
+      you are install to online 
+      his provide java developemnt tool kit for user
+
+Q19. How to work jvm to internal functionaloty?
+Ans.  inside jvm three case;
+      1. class loader= class loader is verifier the your code is 
