@@ -1,0 +1,432 @@
+instance variable :
+-------------------------------------------------------------
+Main class :parameterised : : two number addition 
+
+
+public class Instanc {
+    int a;
+    int b;
+    Instanc(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+        System.out.println("add "+(a+b));
+    }
+    public static void main(String [] args)
+    {
+        Instanc sc=new Instanc(2, 3);
+        //System.out.println(Integer);
+    }
+    
+}
+
+Main class :parameterised : : two number sub 
+user input
+
+public class Instanc {
+    int a;
+    int b;
+    Instanc(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+        System.out.println("sub"+(a-b));
+    }
+    public static void main(String [] args)
+    {
+        Instanc sc=new Instanc(2, 3);
+        //System.out.println(Integer);
+    }
+    
+}
+
+ Main class :parameterised : : two number multi
+show() :divide 
+show1() :modular  
+user input
+
+import java.util.*;
+
+public class Instanc {
+    int a;
+    int b;
+    Instanc(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+        System.out.println("add "+(a+b));
+    }
+    void show()
+    {
+        Scanner input=new Scanner (System.in);
+        int a=input.nextInt();
+        int b=input.nextInt();
+        System.out.println("The divide "+(a/b));
+    }
+    void show1()
+    {
+        Scanner input=new Scanner (System.in);
+        int a=input.nextInt();
+        int b=input.nextInt();
+        System.out.println("The moduler "+(a%b));
+    }
+    public static void main(String [] args)
+    {
+        Instanc sc=new Instanc(2, 3);
+        sc.show();
+        sc.show1();
+    }
+    
+}
+
+
+class A 
+A class :parameterised : : two number addition 
+show() :divide 
+user input 
+
+Main class :parameterised : : two number sub 
+user input
+d
+
+import java.util.*;
+
+class A{
+    int a;
+    int b;
+    A(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+        System.out.println("addition"+(a+b));
+    }
+    void show(int a,int b){
+        this.a=a;
+        this.b=b;
+        System.out.println("divide"+(a/b));
+        
+    }
+
+}
+public class Instanc{
+    
+    Instanc(int a,int b)
+    {
+        System.out.println("sub"+(a-b));
+        
+
+    }
+    public static void main(String []args){
+        Scanner input=new Scanner (System.in);
+    int a=input.nextInt();
+    int b=input.nextInt();
+    A obj=new A(a, b);
+    obj.show(a, b);
+    new Instanc(a,b); 
+    }
+}
+
+class A 
+A class :parameterised : : two number addition 
+show() :divide 
+user input 
+
+class B
+B class :parameterised : : two number addition 
+show1() :mul 
+user input 
+
+
+Main class :parameterised : : two number sub 
+show2() :add  
+
+user input
+main()
+A 
+B
+Main access 
+
+import java.util.*;
+
+class A{
+     int a;
+     int b;
+    A(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+        System.out.println("add"+(a+b));
+    }
+    void show(int a,int b)
+    {  
+        this.a=a;
+        this.b=b;
+       System.out.println("divide"+(a/b));
+    }
+}
+class B{
+    int a;
+    int b;
+    B(int a,int b)
+    {
+       this.a=a;
+       this.b=b;
+        System.out.println("add"+(a+b));
+    }
+    void show(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+       System.out.println("mul"+(a*b));
+    }
+}
+public class Instanc
+{
+    Instanc(int a,int b)
+    {
+        System.out.println("sub main class "+(a-b));
+    }
+    void show(int a,int b)
+    {
+        System.out.println("add main class "+(a+b));
+    }
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of a ");
+        int a=input.nextInt();
+        System.out.println("Enter the value of b");
+        int b=input.nextInt();
+        A sc=new A(a,b);
+        sc.show(a, b);
+        B s=new B(a, b);
+        s.show(a, b);
+        Instanc c=new Instanc(a, b);
+        c.show(a, b);
+    }
+
+}
+
+getter setter :
+##############################################################
+Main class : : : two number addition 
+user input 
+
+import java.util.*;
+public class Instanc
+{
+    int a;
+    int b;
+    void set(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+    }
+    int getA(){
+        return a;
+    }
+    int getP(){
+        return b;
+    }
+    void add(){
+        System.out.println(a+b);
+    }
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of a");
+        int a=input.nextInt();
+        System.out.println("Enter the value of b");
+
+        int b=input.nextInt();
+           Instanc ac=new Instanc();
+           ac.set(a,b);
+           ac.add();
+           
+    }    
+}
+
+
+Main class : : : two number sub 
+user input
+
+import java.util.*;
+public class Instanc
+{
+    int a;
+    int b;
+    void set(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+    }
+    int getA(){
+        return a;
+    }
+    int getP(){
+        return b;
+    }
+    void add(){
+        System.out.println(a-b);
+    }
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of a");
+        int a=input.nextInt();
+        System.out.println("Enter the value of b");
+
+        int b=input.nextInt();
+           Instanc ac=new Instanc();
+           ac.set(a,b);
+           ac.add();
+           
+    }    
+}
+
+Main class : : : two number multi
+show() :divide 
+show1() :modular  
+user input
+
+import java.util.*;
+public class Instanc 
+{
+    int a;
+    int b;
+    void set(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+
+    }
+    int geta()
+    {
+        return a;
+
+    }
+    int getb()
+    {
+        return b;
+    }
+    void mul()
+    {
+        System.out.println("The mul"+(a*b));
+    }
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Entre the value of a ");
+        int a=input.nextInt();
+        System.out.println("Enter the value of b");
+        int b=input.nextInt();
+        Instanc sc=new Instanc();
+        sc.set(a, b);
+        sc.mul();
+        
+    }
+
+}
+
+class A 
+A class : : : two number addition 
+show() :divide 
+user input 
+
+Main class : : : two number sub 
+user input
+
+import java.util.*;
+import java.util.zip.Inflater;
+class A{
+    int a;
+    int b;
+    void set(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+    }
+    int geta()
+    {
+        return a;
+    }
+    int getb()
+    {
+        return b;
+    }
+    void add()
+    {
+        System.out.println("The add "+(a+b));
+    }
+    void show()
+    {
+        System.out.println("The divide"+(a/b));
+    }
+}
+public class Instanc
+{
+    int a;
+    int b;
+    void ste(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+    }
+    int geta()
+    {
+        return a;
+    }
+    int getb()
+    {
+        return b;
+    }
+    void sub()
+    {
+        System.out.println("The sub"+(a-b));
+    }
+    public static void main(String [] args)
+    {
+    Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of a");
+        int a=input.nextInt();
+        System.out.println("Enter the value of b");
+        int b=input.nextInt();
+        A sc=new A();
+        sc.set(a, b);
+        sc.add();
+        sc.add();
+
+        Instanc s=new Instanc();
+        s.ste(a, b);
+        s.sub();
+
+}
+
+}
+
+class A 
+A class : : : two number addition 
+show() :divide 
+user input 
+
+class B
+B class : : : two number addition 
+show1() :mul 
+user input 
+
+
+Main class : : : two number sub 
+show2() :add  
+
+user input
+main()
+A 
+B
+Main access 
+
+
+
+
+
+
+

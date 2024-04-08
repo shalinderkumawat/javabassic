@@ -1,0 +1,1815 @@
+	user input 
+--------------------------------------------
+class A 
+	instance variable final
+	method final print 
+
+Main access
+-------------
+
+import java.util.*;
+class A{
+
+     int a;
+    final void show()
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value  of a ");
+        a=input.nextInt();
+        System.out.println(a);
+    }
+}
+
+    public class Final {
+   
+    public static void main(String [] args)
+    {
+        A sc=new A();
+        sc.show();
+        
+    }
+}
+
+
+------------------------------------------
+class A 
+	instance variable final
+	method non final print 
+
+Main access
+------------
+
+import java.util.*;
+class A{
+
+     int a;
+     void show()
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value  of a ");
+        a=input.nextInt();
+        System.out.println(a);
+    }
+}
+
+    public class Final {
+   
+    public static void main(String [] args)
+    {
+        A sc=new A();
+        sc.show();
+
+    }
+}
+
+
+------------------------------------------
+
+class A 
+	instance variable final
+	method final print 
+
+Main access
+---------------
+
+    import java.util.*;
+    class A{
+
+       final int a;
+
+        void show()
+        {
+            System.out.println(a);
+        }
+    }
+
+        public class Final {
+    
+        public static void main(String [] args)
+        {
+            Scanner input=new Scanner (System.in);
+            System.out.println("Enter the value  of a ");
+            int a=input.nextInt();
+            A sc=new A();
+            sc.show();
+
+        }
+    }
+
+
+class A 
+	instance variable  final
+	getter setter 
+
+Main access
+-------------
+
+    import java.util.*;
+    class A{
+
+       final int a;
+
+        void sate (int a)
+        {
+            this.a=a;
+        }
+        int gatA()
+        {
+            return a;
+        }
+
+    }
+
+        public class Final {
+    
+        public static void main(String [] args)
+        {
+            Scanner input=new Scanner (System.in);
+            System.out.println("Enter the value  of a ");
+            int a=input.nextInt();
+            A sc=new A();
+            sc.sate(a);
+
+        }
+    }
+
+
+(error)
+
+class A 
+	instance variable  final
+	getter setter 
+
+class B ex A
+	method :final instance variable access
+ 
+Main access
+-----------
+
+    import java.util.*;
+    class A{
+     final
+       int a;
+
+        int gatA()
+        {
+            return a;
+        }
+
+    }
+    class B extends A{
+        final void show(int a)
+        {
+            // this.a=a;
+             System.out.println("hi This is B class ");
+
+        }
+    }
+
+        public class Final {
+    
+        public static void main(String [] args)
+        {
+            Scanner input=new Scanner (System.in);
+            System.out.println("Enter the value  of a ");
+            int a=input.nextInt();
+            B sc=new B();
+            sc.show(3445);
+
+        }
+    }
+
+
+
+class A 
+	instance variable  final
+	getter setter 
+
+class B ex A
+	method :final instance variable access
+ 
+class C ex B 
+acces :instance variable  final
+
+Main access 
+---------------------
+ class A{
+   final int a;
+    
+    int gata()
+    {
+        return a;
+    }
+    void show()
+    {
+        System.out.println(a);
+    }
+     void set(int a)
+    {
+        this.a=a;
+    }
+}
+class B extends A{
+
+   final void access()
+   {
+    int a=34;
+    super.set(a);
+   }
+  
+}
+class C extends B{
+
+    A sc=new A();
+    sc.show();
+
+}
+public class Final{
+    public static void main(String [] args)
+    {
+        C sc= new C();
+        sc.set(334);
+        sc.show();
+        
+       }
+    }
+
+
+--------------------------------------------------
+class A 
+	instance variable final
+	method final print :no return and argument 
+
+Main access
+--------------
+
+
+import java.util.*;
+class A{
+   final int a=3;
+   final void show()
+   {
+    System.out.println(a);
+   } 
+   
+}
+
+public class Final{
+    public static void main(String [] args)
+    {
+        A sc= new A();
+    
+        sc.show();
+        
+       }
+    }
+
+
+------------------------------------------
+class A 
+	instance variable final
+	method final print : return and argument 
+
+Main access
+---------------------
+
+
+import java.util.*;
+class A{
+   final int a=3;
+   final int  show(int b)
+   {
+     b=a;
+    return a;
+   } 
+   
+}
+
+public class Final{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        int s=input.nextInt();
+        A sc= new A();
+       System.out.println("A final variable "+ sc.show(s));
+    
+       
+       }
+    }
+
+
+------------------------------------------
+class A 
+	instance variable final
+	method final print : return and no argument 
+
+Main access
+--------------
+
+
+
+import java.util.*;
+class A{
+    Scanner input=new Scanner (System.in);
+    
+   final int a=input.nextInt();
+   final int  show()
+   {
+     
+    return a;
+   } 
+   
+}
+
+public class Final{
+    public static void main(String [] args)
+    {
+       
+        A sc= new A();
+       System.out.println("A final variable "+ sc.show());
+    
+       
+       }
+    }
+
+
+------------------------------------------
+final class A 
+	instance :final
+	method :final :: return and no argument 
+
+Main access
+--------------------
+
+
+import java.util.*;
+final class A{
+    Scanner input=new Scanner (System.in);
+    
+   final int a=input.nextInt();
+   final int  show()
+   {
+     
+    return a;
+   } 
+   
+}
+
+public class Final{
+    public static void main(String [] args)
+    {
+       
+        A sc= new A();
+       System.out.println("A final variable "+ sc.show());
+    
+       
+       }
+    }
+
+------------------------------------------------------
+final class A 
+	instance :non final
+	method :final :: return and no argument 
+
+Main access
+-------------
+
+
+import java.util.*;
+final class A{
+    Scanner input=new Scanner (System.in);
+    
+    int a=input.nextInt();
+   final int  show()
+   {
+     
+    return a;
+   } 
+   
+}
+
+public class Final{
+    public static void main(String [] args)
+    {
+       
+        A sc= new A();
+       System.out.println("A non final variable "+ sc.show());
+    
+       
+       }
+    }
+
+------------------------------------------------------
+final class A 
+	instance :final
+	method :non final :: return and  argument (final)
+
+Main access
+---------------
+
+
+import java.util.*;
+final class A{
+    Scanner input=new Scanner (System.in);
+    
+   final int a=input.nextInt();
+    int  show()
+   {
+     
+    return a;
+   } 
+   
+}
+
+public class Final{
+    public static void main(String [] args)
+    {
+       
+        A sc= new A();
+       System.out.println("A final variable "+ sc.show());
+    
+       
+       }
+    }
+
+------------------------------------------------------
+getter setter 
+
+final class A 
+	instance :final
+	method :final :: return and no argument 
+
+Main access
+----------------
+
+
+import java.util.*;
+final class A{
+    Scanner input=new Scanner (System.in);
+   final int a;//instance variable 
+
+  final void set(int a)
+   {
+    this.a=a;
+   }
+    
+    int geta()
+   {
+     
+    return a;
+   } 
+   
+}
+
+public class Final{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner(System.in);
+        int s=input.nextInt();       
+        A sc= new A();
+        sc.set(s);
+        System.out.println(sc.geta());
+    
+       
+       }
+    }
+
+import java.util.*;
+final class A{
+    Scanner input=new Scanner (System.in);
+   final int a;//instance variable 
+
+  final void set(int a)
+   {
+    this.a=a;
+   }
+    
+    int geta()
+   {
+     
+    return a;
+   } 
+   
+}
+
+public class Final{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner(System.in);
+        int s=input.nextInt();       
+        A sc= new A();
+        sc.set(s);
+        System.out.println(sc.geta());
+    
+       
+       }
+    }
+Final.java:9: error: cannot assign a value to final variable a
+    this.a=a;
+        ^
+1 error
+
+
+------------------------------------------------------
+initialize in constructor 
+final class A 
+	instance :final
+	method :final :: return and no argument 
+
+Main access
+
+----------------------------
+
+final class A{
+   final int a; 
+    A()
+    {
+         a=1;
+        System.out.println("A class ");
+    }
+    
+    final int  show()
+    {
+        System.out.println("A class ");
+        return a;
+    }
+}
+public class Final {
+    public static void main(String [] args)
+    {
+        A sc=new A();
+        sc.show();
+    }
+}
+
+
+------------------------------------------------------
+final class A 
+	static instance :final
+	method :final :: return and no argument 
+
+Main access
+------------------
+
+final class A{
+   static final int a=23; 
+    
+    
+    final int  show()
+    {
+        System.out.println("A class ");
+        return a;
+    }
+}
+public class Final {
+    public static void main(String [] args)
+    {
+        A sc=new A();
+        sc.show();
+        
+    }
+}
+
+
+------------------------------------------------------
+final class A 
+	static instance :final
+	method :final :: return and  argument (final)
+
+Main access
+-------------- 
+
+import java.util.*;
+final class A{
+   static final int  a=23 ; 
+    
+    
+    final int  show(final int a)
+    {
+        System.out.println("A class ");
+        return a;
+    }
+}
+public class Final {
+    public static void main(String [] args)
+    {
+
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of a ");
+        int a=input.nextInt();
+        A sc=new A();
+        sc.show(a);
+        
+    }
+}
+
+
+file :
+void show1():no return and no argument 
+void show2():no return and  argument 
+
+void show3(): return and no argument 
+
+void show4(): return and  argument 
+
+Main file : 
+access 
+-------------
+file A
+ class Temp {
+    
+        void show()
+        {
+            System.out.println("A class 1 ");
+        }
+        void show2(int a)
+        {
+            System.out.println("A class 2");
+        }
+        int show3()
+        {
+            System.out.println("A class 3");
+            return 0;
+        }
+         int  show5( int a)
+        {
+            System.out.println("A class 4");
+            return a;
+        }
+    }
+    
+
+
+
+file b
+
+import java.util.*;
+
+public class Final extends Temp {
+    public static void main(String [] args)
+    {
+
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of a ");
+        int a=input.nextInt();
+        Temp sc=new Temp();
+        sc.show5(a);
+        sc.show();
+        sc.show2(a);
+        sc.show3();
+        
+    }
+}
+
+
+------------------------------------------------------
+file :
+default constructor 
+void show1():no return and no argument 
+void show2():no return and  argument 
+
+void show3(): return and no argument 
+
+void show4(): return and  argument 
+
+Main file : 
+access 
+------------------------- 
+
+file A
+ class Temp {
+    Temp()
+    {
+        
+    }
+    
+        void show()
+        {
+            System.out.println("A class 1 ");
+        }
+        void show2(int a)
+        {
+            System.out.println("A class 2");
+        }
+        int show3()
+        {
+            System.out.println("A class 3");
+            return 0;
+        }
+         int  show5( int a)
+        {
+            System.out.println("A class 4");
+            return a;
+        }
+    }
+    
+
+file B
+
+import java.util.*;
+
+public class Final extends Temp {
+    public static void main(String [] args)
+    {
+
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of a ");
+        int a=input.nextInt();
+        Temp sc=new Temp();
+        sc.show5(a);
+        sc.show();
+        sc.show2(a);
+        sc.show3();
+        
+    }
+}
+
+
+------------------------------------------------------
+file :
+parameterised constructor :two number addition 
+void show1():no return and no argument 
+void show2():no return and  argument 
+
+void show3(): return and no argument 
+
+void show4(): return and  argument 
+
+Main file : 
+access 
+-------------
+file A
+ class Temp {
+    Temp(int a,int b)
+    {
+        System.out.println(a+b);
+
+    }
+    
+        void show()
+        {
+            System.out.println("A class 1 ");
+        }
+        void show2(int a)
+        {
+            System.out.println("A class 2");
+        }
+        int show3()
+        {
+            System.out.println("A class 3");
+            return 0;
+        }
+         int  show5( int a)
+        {
+            System.out.println("A class 4");
+            return a;
+        }
+    }
+    
+
+
+
+file b 
+
+import java.util.*;
+
+public class Final extends Temp {
+    Final (int a,int b)
+    {
+        super(a, b);
+    }
+
+       public static void main(String [] args)
+    {
+
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of a ");
+        int a=input.nextInt();
+        System.out.println("Enter the value of b");
+        int b=input.nextInt();
+        Temp sc=new Temp(a,b);
+        sc.show5(a);
+        sc.show();
+        sc.show2(a);
+        sc.show3();
+        
+    }
+}
+
+	
+
+------------------------------------------------------
+file :
+getter seeter :addition 
+
+Main file : 
+access 
+------------
+
+file A
+ class Temp {
+    int a;
+    int b;
+    void setAB(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+    }
+    int getA()
+    {
+        return a;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void add()
+    {
+        System.out.println(a+b);
+    }    
+        
+    }
+    
+file B 
+
+import java.util.*;
+
+public class Final extends Temp {
+    // Final (int a,int b)
+    // {
+    //     super(a, b);
+    // }
+
+       public static void main(String [] args)
+    {
+
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of a ");
+        int a=input.nextInt();
+        System.out.println("Enter the value of b");
+        int b=input.nextInt();
+        Temp sc=new Temp();
+        sc.setAB(a, b);
+        sc.add();
+    }
+}
+
+
+------------------------------------------------------
+file :
+parameterised constructor :two number addition 
+void show1():no return and no argument 
+covariant return type 
+void show4(): return and  argument 
+
+Main file : 
+access 
+------------------
+
+
+file A
+ class Temp {
+
+    Temp(int a,int b)
+    {
+        System.out.println("The add is "+a+b);
+       }
+    
+    
+        void show()
+        {
+            System.out.println(23);
+            
+        }
+        
+        
+         int  show5( int a)
+        {
+            System.out.println("A class 4");
+            return a;
+        }
+    }
+    
+
+
+
+
+file B 
+
+import java.util.*;
+
+public class Final extends Temp {
+    Final (int a,int b)
+    {
+        super(a, b);
+    }
+
+       public static void main(String [] args)
+    {
+
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of a ");
+        int a=input.nextInt();
+        System.out.println("Enter the value of b");
+        int b=input.nextInt();
+        Temp sc=new Temp(a,b);
+        sc.show();
+        sc.show5(a);
+    }
+}
+
+file :
+method overloading 
+
+Main file : 
+access 
+
+remove also +overload
+-----------------------
+
+overload 
+
+file A
+ class Temp {
+
+   
+    
+    
+        void show()
+        {
+            System.out.println(23);
+            
+        }
+        
+        
+         void show( )
+        {
+            System.out.println("A class 4");
+        
+        }
+    }
+    
+
+remove
+
+file A
+ class Temp {
+
+   
+    
+    
+        void show()
+        {
+            System.out.println(23);
+            
+        }
+        
+        
+         void show(int a)
+        {
+            
+            System.out.println("A class 4");
+        
+        }
+    }
+    
+
+
+
+file B
+
+import java.util.*;
+
+public class Final extends Temp {
+    // Final (int a,int b)
+    // {
+    //     super(a, b);
+    // }
+
+       public static void main(String [] args)
+    {
+
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of a ");
+        int a=input.nextInt();
+        System.out.println("Enter the value of b");
+        int b=input.nextInt();
+        Temp sc=new Temp();
+        sc.show();
+        sc.show();
+    }
+}
+
+
+file :
+constructor overloading 
+
+Main file : 
+access 
+
+remove also +overload
+
+overload
+File A
+
+ class Temp {
+
+   Temp()
+   {
+    System.out.println("Temp class ");
+
+   }
+   Temp()
+   {
+    System.out.println("Second counstructor ");
+   }
+
+    
+    
+        // void show()
+        // {
+        //     System.out.println(23);
+            
+        // }
+        
+        
+        //  void show(int a)
+        // {
+            
+        //     System.out.println("A class 4");
+        
+        // }
+    }
+    
+
+File B 
+
+
+public class Finl extends Temp {
+    public static void main(String [] args)
+    {
+        Temp sc=new Temp();
+            
+    
+    }
+    
+}
+
+
+remove
+File A
+ class Temp {
+
+   Temp()
+   {
+    System.out.println("Temp class ");
+
+   }
+   Temp(int a)
+   {
+    System.out.println("Second counstructor ");
+   }
+
+    
+    
+        // void show()
+        // {
+        //     System.out.println(23);
+            
+        // }
+        
+        
+        //  void show(int a)
+        // {
+            
+        //     System.out.println("A class 4");
+        
+        // }
+    }
+    
+
+File B
+
+public class Finl extends Temp {
+    public static void main(String [] args)
+    {
+        Temp sc=new Temp();
+            new Temp(34);
+            
+    
+    }
+    
+}
+
+
+------------------------------------------------------
+file :
+constructor chaining 
+
+Main file : 
+access 
+
+remove also +overload
+--------------------------
+overload:
+File A
+ public class Temp {
+
+   Temp()
+   {
+    System.out.println("Temp class ");
+
+   }
+   Temp()
+   {
+    this();
+    System.out.println("Second counstructor ");
+   }
+   Temp(i)
+   {
+    this(a);
+    System.out.println("This is Temp class 3 cons");
+   }
+
+    
+    
+        // void show()
+        // {
+        //     System.out.println(23);
+            
+        // }
+        
+        
+        //  void show(int a)
+        // {
+            
+        //     System.out.println("A class 4");
+        
+        // }
+    }
+    
+
+remove
+
+File A
+ public class Temp {
+
+   Temp()
+   {
+    System.out.println("Temp class ");
+
+   }
+   Temp(int a)
+   {
+    this();
+    System.out.println("Second counstructor ");
+   }
+   Temp(int a,int b)
+   {
+    this(a);
+    System.out.println("This is Temp class 3 cons");
+   }
+
+    
+    
+        // void show()
+        // {
+        //     System.out.println(23);
+            
+        // }
+        
+        
+        //  void show(int a)
+        // {
+            
+        //     System.out.println("A class 4");
+        
+        // }
+    }
+    
+
+File B
+ public class Temp {
+
+   Temp()
+   {
+    System.out.println("Temp class ");
+
+   }
+   Temp(int a)
+   {
+    this();
+    System.out.println("Second counstructor ");
+   }
+   Temp(int a,int b)
+   {
+    this(a);
+    System.out.println("This is Temp class 3 cons");
+   }
+    }
+    
+
+------------------------------------------------------
+file :
+pallindrome
+armstrong
+prime
+neon
+perfect
+fibonacci 
+
+
+Main file : 
+access 
+-------------------
+
+File a
+import java.util.Scanner;
+
+public class Temp {
+
+  void pallindrom()
+  {
+   
+    Scanner input=new Scanner (System.in);
+     System.out.println("Enter the value of num");
+    int num=input.nextInt();
+    int rem,sum=0;
+    int temp=num;
+    while(num!=0)
+    {
+      rem=num%10;
+      sum=sum*10+rem;
+      num/=10;
+    }
+    if(sum==temp)
+    {
+      System.out.println("This number is pallindrom number "+sum);
+    }
+    else 
+    {
+      System.out.println("This number is not pallindrom number ");
+    }
+  }
+  void armstrong()
+  {
+      Scanner input=new Scanner (System.in);
+     System.out.println("Enter the value of number ");
+     int num=input.nextInt();
+     int rem,sum=0;
+     
+     while(num!=0)
+     {
+         rem=num%10;
+         sum=sum+rem+rem+rem;
+         num=num/10;
+         
+     }
+     System.out.println(sum);
+  }
+  void prime()
+  {
+      Scanner input=new Scanner (System.in);
+      System.out.print("Enter the value of num");
+      int num=input.nextInt();
+      int count=0;  
+      
+      for(int a=1;a<=num;a++)
+      {
+          if(a%num==0)
+          {
+             count++; 
+             
+          }
+         
+      } 
+      if(count==2){
+      System.out.println(" primt number");
+      }
+	else {
+       System.out.println("not prime number ");
+  }
+}
+  void neon()
+  {
+      Scanner input=new Scanner (System.in);
+      System.out.println("Ebnter the value of num ");
+      int num=input.nextInt();
+      int qube=num*num;
+      
+      int rem,sum=0;
+      
+      int temp=num;
+      
+      while(qube!=0)
+      {
+          rem=qube%10;
+          sum=sum+rem;
+          qube=qube/10;
+      }
+      if(sum==temp)
+      {
+          System.out.println("This is neon number ");
+      }
+      else 
+      {
+          System.out.println("This is not neon number ");
+      }
+  }
+  void perfect()
+  {
+      Scanner input=new Scanner (System.in);
+      System.out.println("Enter the value of number ");
+      int num=input.nextInt();
+      
+      int temp=num;
+      
+      int sum=0;
+      for(int i=1;i<=num;i++)
+      {
+          if(num%i==0)
+          {
+              sum=sum+i;
+          }
+      }
+      
+      if(sum==temp)
+      {
+          System.out.println("is a perfect number ");
+      }
+      else{
+          System.out.println("not perfect number");
+      }
+      
+  }
+  void fibonacci()
+  {
+      Scanner input=new Scanner (System.in);
+      System.out.println("Enter the number :");
+      int num=input.nextInt();
+      
+      int start=0;
+      int second=1;
+      
+      System.out.print(start+" ");
+      System.out.print(second+" ");
+      
+      for(int i=1;i<=num;i++)
+      {
+        i=start+second;
+        System.out.print(i+" ");
+        second=start;
+        start=i;
+      }
+  }
+}
+       }
+    
+
+File B
+
+public class Main extends Temp {
+    public static void main(String [] args)
+    {
+        Temp sc=new Temp();
+            sc.pallindrom();
+            sc.armstrong();
+            sc.prime();
+            sc.neon();
+            sc.perfect();
+            sc.fibonacci
+    }
+    
+}
+
+
+
+
+------------------------------------------------------
+single level inheritance : 
+
+file :
+class A
+parameterised constructor :two number addition 
+void show1():no return and no argument 
+
+class Ab ex A 
+covariant return type 
+void show4(): return and  argument 
+
+Main file : 
+access 
+----------------------
+	 	
+	 	
+class A{
+  A(int a,int b)
+  {
+  System.out.println("Add two number is "+(a+b));
+  }
+  void show(){
+      System.out.println("show 1 A class ");
+  }
+}
+class B extends A{
+  
+  B()
+  {
+      super (32,45);
+    
+  }
+  
+  int show1(int a)
+  {
+      System.out.println("Class B ");
+      return a;
+  }
+}
+
+
+
+
+file B
+public class Finl extends B {
+    public static void main(String [] args)
+    {
+        B sc=new B();
+          sc.show();
+          sc.show1(32);         
+    
+    }
+    
+}
+
+
+file :
+method overloading 
+
+Main file : 
+access 
+
+remove also +overload
+------------------------
+
+overload
+
+File A
+class Temp{
+  void show()
+  {
+    System.out.println("Entey thisng ");
+  }
+  void show()
+  {
+    System.out.println("method 2");
+  }
+}	
+
+File B
+
+public class Finl extends Temp {
+    public static void main(String [] args)
+    {
+        B sc=new B();
+          sc.show();
+                   
+    
+    }
+    
+}
+
+remove
+
+file B
+public class Finl extends Temp {
+    public static void main(String [] args)
+    {
+       Temp sc=new Temp();
+          sc.show();
+          
+                   
+    
+    }
+    
+}
+
+
+File A
+class Temp{
+  void show(int a)
+  {
+    System.out.println("Entey thisng ");
+  }
+  void show()
+  {
+    this.show();
+    System.out.println("method 2");
+  }
+}
+
+------------------------------------------------------
+file :
+constructor overloading 
+
+Main file : 
+access 
+
+remove also +overload
+-----------------------
+overload
+
+File B
+public class Finl extends Temp {
+    public static void main(String [] args)
+    {
+       Temp sc=new Temp();
+          
+          
+                   
+    
+    }
+    
+}
+
+File A
+class Temp{
+  Temp()
+  {
+    
+    System.out.println("Entey thisng ");
+  }
+  Temp()
+  {
+    
+    System.out.println("method 2");
+  }
+}
+
+remove
+File A
+class Temp{
+  Temp(int a)
+  {
+    
+    System.out.println("Entey thisng ");
+  }
+  Temp()
+  {
+   
+    System.out.println("method 2");
+  }
+}
+File A
+public class Finl extends Temp {
+    public static void main(String [] args)
+    {
+       Temp sc=new Temp();
+          
+          
+                   
+    
+    }
+    
+}
+
+------------------------------------------------------
+file :
+constructor chaining 
+
+Main file : 
+access 
+
+remove also +overload
+------------------------------------------
+
+File B
+public class Finl extends Temp {
+    public static void main(String [] args)
+    {
+       Temp sc=new Temp();
+          
+          
+                   
+    
+    }
+    
+}
+
+File A
+class Temp{
+  Temp()
+  {
+    
+    System.out.println("Entey thisng ");
+  }
+  Temp()
+  {
+    
+    System.out.println("method 2");
+  }
+}
+
+remove
+File A
+class Temp{
+  Temp(int a)
+  {
+    
+    System.out.println("Entey thisng ");
+  }
+  Temp()
+  {
+   this(34);
+    System.out.println("method 2");
+  }
+}
+File A
+public class Finl extends Temp {
+    public static void main(String [] args)
+    {
+       Temp sc=new Temp();
+          
+          
+                   
+    
+    }
+    
+}
+
+
+
+------------------------------------------------------
+multilevl inheritance 
+
+file :
+class A
+parameterised constructor :two number addition 
+
+class B ex A 
+covariant return type 
+void show1():no return and no argument 
+
+class Ab ex B
+void show4(): return and  argument 
+
+Main file : 
+access 
+
+----------------------------------------
+
+File A
+public class Finl extends C {
+    public static void main(String [] args)
+    {
+        C sc=new C();
+       new B();
+       sc.show1();
+       sc.show4(32);;
+          
+          
+                   
+    
+    }
+    
+}
+
+File B
+import java.util.Scanner;
+
+class Hp{
+    Hp(int a,int b)
+  {
+    
+    System.out.println("Entey thisng "+(a+b));
+  }
+  
+}
+class B extends Hp{
+  B ()
+  {
+    super(32,32);
+     
+  }
+ void show1()
+ {
+  System.out.println("This is first methode");
+ }
+}
+class C extends B{
+  int show4(int a)
+  {
+    System.out.println("C class methode");
+    return a;
+  }
+}
+
+heirarichal inheritance 
+
+file :
+class A
+parameterised constructor :two number addition 
+
+class B ex A 
+covariant return type 
+void show1():no return and no argument 
+
+class Ab ex A
+void show4(): return and  argument 
+
+Main file : 
+access 
+--------------------------
+
+File A
+public class Finl extends C {
+    public static void main(String [] args)
+    {
+        C sc=new C();
+      B s= new B();
+       s.show1();
+       
+       sc.show4(32);;
+          
+          
+                   
+    
+    }
+    
+}
+
+File B
+import java.util.Scanner;
+
+class A{
+   A(int a,int b)
+  {
+    
+    System.out.println("Entey thisng "+(a+b));
+  }
+  
+}
+class B extends A{
+  B ()
+  {
+    super(32,32);
+     
+  }
+ void show1()
+ {
+  System.out.println("This is first methode");
+ }
+}
+class C extends A{
+  C()
+  {
+    super(43,34);
+  }
+  int show4(int a)
+  {
+    System.out.println("C class methode");
+    return a;
+  }
+}
+
+------------------------------------------------------
+single level inheritance : 
+
+file :
+class A
+overrding 
+
+class Ab ex A 
+
+Main file : 
+access 
+---------------------------
+
+File A
+class A{
+  void show()
+  {System.out.println("first methode");
+}
+void show(int a){
+  this.show();
+  System.out.print("second methode");
+}
+}
+class B extends A{
+
+}
+
+File B
+public class Finl extends C {
+    public static void main(String [] args)
+    {
+       B sc=new B();
+       sc.show();
+          
+                   
+    
+    }
+    
+}
+
+-----------------------------------------------------
+

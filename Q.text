@@ -8,7 +8,7 @@ Q2.  what is PLATFORM?
 Ans.  set of hardwre and softwre on wich program will run,
 
 Q3.  what is platform indipand ?
-Ans.  dosen't need aney platform for run your code 
+Ans.  dosen't need any platform for run your code 
       like=> 
              you creat your program linux operating system 
                     your program run aney platform 
@@ -62,7 +62,7 @@ Ans.  thare are two types comlpiler in java
        2. jit
 Q11. What is javac compiler?
 Ans.  javac compiler is a compiler 
-      javaccompile ris persint of aney computer but is not visible
+      javaccompiler is present of any computer but is not visible
       javac compiler is use to == 
       1.javac and class name
       2. and class name.

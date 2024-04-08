@@ -1,0 +1,235 @@
+1)class A
+
+
+class B ex A 
+
+Main :
+make object of class A and access from B class
+
+abstract class A{
+    A()
+    {
+        System.out.println("Hello ");
+    }
+}
+class B extends A{
+    void show1()
+    {
+        System.out.println("Hi B class ");
+    }
+}
+
+public class Abs {
+    public static void main(String [] ar)
+    {
+        A sc=new B();
+        
+    }
+    
+}
+
+
+2)
+class A :ab
+show1 :no return and no argument 
+show2 :ab: return and no argument 
+show3: return and no argument 
+show4 :ab: return and  argument 
+
+class B ex A
+show5:no return and no argument 
+show6:no return and  argument 
+show7: return and no argument 
+
+class Main 
+two ways access 
+
+abstract class A{
+   void show()
+    {
+        System.out.println("Hello ");
+    }
+    abstract int show1(int a);
+    int show2()
+    {
+        System.out.println("Hello");
+        return 0;
+    }
+    abstract String show3(String a);
+}
+
+class B extends A{
+    int show1(int a)
+    {
+        a=34;
+        return a;
+    }
+    String show3(String a)
+    {
+        a="hi my name is shailendra kumawat";
+        return a;
+    }
+    void show4()
+    {
+        System.out.println("Class B");
+    }
+    void show5(int a)
+    {
+        a=5;
+        System.out.println(a);
+    }
+    int show6()
+    {
+        return 0;
+    }
+
+}
+
+public class Abs{
+    public static void main(String [] args)
+    {
+        System.out.println("the first way");
+        A sc=new B();
+          sc.show();
+          sc.show1(3);
+          sc.show2();
+          sc.show3("null");
+        System.out.println("second way");
+
+        B s=new B();
+        s.show();
+        s.show1(3);
+        s.show2();
+        s.show3("null");
+        s.show4();
+        s.show5(0);
+        s.show6();
+    }
+}
+
+
+
+3)
+class A :ab
+show1 :no return and no argument 
+show2 :ab: return and no argument 
+show3: return and no argument 
+show4 :ab: return and  argument 
+
+class B ex A
+show5:no return and no argument 
+show6:no return and  argument 
+show7: return and no argument 
+
+class Main 
+anonymous inner class 
+
+abstract class A{
+   void show()
+    {
+        System.out.println("Hello ");
+    }
+    abstract int show1(int a);
+    int show2()
+    {
+        System.out.println("Hello");
+        return 0;
+    }
+    abstract String show3(String a);
+}
+
+class B extends A{
+    int show1(int a)
+    {
+        a=34;
+        return a;
+    }
+    String show3(String a)
+    {
+        a="hi my name is shailendra kumawat";
+        return a;
+    }
+    void show4()
+    {
+        System.out.println("Class B");
+    }
+    void show5(int a)
+    {
+        a=5;
+        System.out.println(a);
+    }
+    int show6()
+    {
+        return 0;
+    }
+
+}
+
+public class Abs{
+    public static void main(String [] args)
+    {
+        System.out.println("the first way");
+        A sc=new B();
+          sc.show();
+          sc.show1(3);
+          sc.show2();
+          sc.show3("null");
+        System.out.println("second way");
+
+        B s=new B(){
+            int show1(int a)
+            {
+                System.out.println("hi");
+                return a;
+            };
+            int show2()
+            {
+             
+                System.out.println("A class");
+                 return 0;
+            };
+
+        };
+        s.show();
+        s.show1(3);
+        s.show2();
+        s.show3("null");
+        s.show4();
+        s.show5(0);
+        s.show6();
+    }
+}
+
+
+
+
+4)
+class A :ab 
+A()
+show1 :ab
+show2 
+
+class B ex A
+B()
+show3
+show4
+
+class C:ab
+C()  
+show5:ab
+show6
+
+
+class D ex C
+D()
+show7
+show8
+
+
+class Main 
+a)child k through abstraction ka object bnana hey 
+
+b)anonymous inner class 
+
+
+
