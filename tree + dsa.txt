@@ -1,0 +1,219 @@
+Q make a tree 
+Ans .
+
+import java.util.Scanner;
+
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+public class Main {
+    static Scanner sc;
+
+    // Method to create the binary tree
+    static Node createTree() {
+        Node root = null;
+        System.out.println("Enter node data (-1 for no node):");
+        int data = sc.nextInt();
+
+        if (data == -1) {
+            return null; // Return null if no node should be created
+        }
+        root = new Node(data);
+
+        System.out.println("Enter left child of " + data + ":");
+        root.left = createTree(); // Recursively create left subtree
+
+        System.out.println("Enter right child of " + data + ":");
+        root.right = createTree(); // Recursively create right subtree
+
+        return root;
+    }
+
+    public static void main(String[] args) {
+        sc = new Scanner(System.in);
+        Node root = createTree(); // Create the tree based on user input
+      
+    }
+}
+
+
+Q2 Print the maximum
+
+Ans)
+import java.util.Scanner;
+
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+public class Main {
+    static Scanner sc;
+
+    // Method to create the binary tree
+    static Node createTree() {
+        Node root = null;
+        System.out.println("Enter node data (-1 for no node):");
+        int data = sc.nextInt();
+
+        if (data == -1) {
+            return null; // Return null if no node should be created
+        }
+        root = new Node(data);
+
+        System.out.println("Enter left child of " + data + ":");
+        root.left = createTree(); // Recursively create left subtree
+
+        System.out.println("Enter right child of " + data + ":");
+        root.right = createTree(); // Recursively create right subtree
+
+        return root;
+    }
+
+    // Method to calculate the height of the binary tree
+    static int maximum(Node root)
+    {
+        if(root==null)
+        {
+        return Integer.MIN_VALUE;
+        }
+        return Math.max(root.data, Math.max(maximum(root.left), maximum(root.right)));
+    }
+
+    public static void main(String[] args) {
+        sc = new Scanner(System.in);
+        Node root = createTree(); // Create the tree based on user input
+        int result = maximum(root); // Calculate the maximum of the tree
+        System.out.println("maximum of the tree: " + result); // Print the maximum
+    }
+}
+
+
+Q3. print the size
+Ans)
+
+import java.util.Scanner;
+
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+public class Main {
+    static Scanner sc;
+
+    // Method to create the binary tree
+    static Node createTree() {
+        Node root = null;
+        System.out.println("Enter node data (-1 for no node):");
+        int data = sc.nextInt();
+
+        if (data == -1) {
+            return null; // Return null if no node should be created
+        }
+        root = new Node(data);
+
+        System.out.println("Enter left child of " + data + ":");
+        root.left = createTree(); // Recursively create left subtree
+
+        System.out.println("Enter right child of " + data + ":");
+        root.right = createTree(); // Recursively create right subtree
+
+        return root;
+    }
+
+    // Method to calculate the height of the binary tree
+    static int size(Node root)
+    {
+        if(root == null)
+        {
+            return 0;
+        }
+        return 1+size(root.left)+size(root.right);
+    }
+
+    public static void main(String[] args) {
+        sc = new Scanner(System.in);
+        Node root = createTree(); // Create the tree based on user input
+        int result = size(root); // Calculate the sizeof the tree
+        System.out.println("Height of the tree: " + result); // Print the size
+    }
+}
+
+Q4. print the height
+Ans)
+import java.util.Scanner;
+
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+public class Main {
+    static Scanner sc;
+
+    // Method to create the binary tree
+    static Node createTree() {
+        Node root = null;
+        System.out.println("Enter node data (-1 for no node):");
+        int data = sc.nextInt();
+
+        if (data == -1) {
+            return null; // Return null if no node should be created
+        }
+        root = new Node(data);
+
+        System.out.println("Enter left child of " + data + ":");
+        root.left = createTree(); // Recursively create left subtree
+
+        System.out.println("Enter right child of " + data + ":");
+        root.right = createTree(); // Recursively create right subtree
+
+        return root;
+    }
+
+    // Method to calculate the height of the binary tree
+    static int height(Node root) {
+        if (root == null) {
+            return 0; // Height of an empty tree is 0
+        }
+        int leftHeight = height(root.left); // Height of left subtree
+        int rightHeight = height(root.right); // Height of right subtree
+
+        // Height of the current node is max of left and right heights + 1
+        return Math.max(leftHeight, rightHeight) + 1;
+    }
+
+    public static void main(String[] args) {
+        sc = new Scanner(System.in);
+        Node root = createTree(); // Create the tree based on user input
+        int result = height(root); // Calculate the height of the tree
+        System.out.println("Height of the tree: " + result); // Print the height
+    }
+}
